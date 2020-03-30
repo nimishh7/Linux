@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">File Sharing Semantics</div>
+       <br><br>
+       <div id="body_templete">
+        When two or more users share the same file, it is necessary to define the semantics of reading and writing precisely to avoid problems. 
+        In single-processor systems that permit processes to share files, such as UNIX, 
+        the semantics normally state that when a READ operation follows a WRITE operation, 
+        the READ returns the value just written, as shown in Figure . Similarly, 
+        when two writes happen in quick succession, followed by a READ, 
+        the value read is the value stored by the last write. In effect, 
+        the system enforces an absolute time ordering on all operations and always returns the most recent value. 
+        We will refer to this model as UNIX semantics. This model is easy to understand and straightforward to implement.
+        <br><br>
+        <img src="/images/143358-Any2FbImgLoader126.jpg" alt="">
+       </div>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>
