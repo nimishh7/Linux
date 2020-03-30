@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">Disk Scheduling</div>
+       <br><br>
+       <div id="body_templete">
+        Disk scheduling is done by operating systems to schedule I/O requests arriving for the disk. 
+        Disk scheduling is also known as I/O scheduling.
+       </div>
+       <pre style="font-size: 15px;">
+        Disk scheduling is important because:
+
+        Multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by the disk controller. 
+        Thus other I/O requests need to wait in the waiting queue and need to be scheduled.
+        Two or more request may be far from each other so can result in greater disk arm movement.
+        Hard drives are one of the slowest parts of the computer system and thus need to be accessed in an efficient manner.
+        There are many Disk Scheduling Algorithms but before discussing them let’s have a quick look at some of the important terms:
+        
+        Seek Time:Seek time is the time taken to locate the disk arm to a specified track where the data is to be read or write. 
+            So the disk scheduling algorithm that gives minimum average seek time is better.
+        
+        Rotational Latency: Rotational Latency is the time taken by the desired sector of disk to rotate 
+            into a position so that it can access the read/write heads. So the disk scheduling algorithm that gives minimum rotational latency is better.
+        
+        Transfer Time: Transfer time is the time to transfer the data. 
+            It depends on the rotating speed of the disk and number of bytes to be transferred.
+        
+        Disk Access Time: Disk Access Time is: Seek Time + Rotational Latency + Transfer Time.
+       </pre>
+       <br><br>
+       Some of the disk scheduling algoriths are :- <br>
+       <ul>
+           <li>FCFS</li>
+           <li>SSTF</li>
+           <li>SCAN</li>
+           <li>CSCAN</li>
+           <li>LOOK</li>
+           <li>CLOOK</li>
+       </ul>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>
