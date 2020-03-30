@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">Process Management</div>
+       <br><br>
+       <div id="body_templete">
+           
+            When you execute a program on your Unix system, the system creates a special environment for that program. <br>
+            This environment contains everything needed for the system to run the program as if no other program were running on the system. <br>
+            Whenever you issue a command in Unix, it creates, or starts, a new process. When you tried out the ls command to list the directory contents, <br>
+             you started a process. A process, in simple terms, is an instance of a running program. <br>
+            The operating system tracks processes through a five-digit ID number known as the pid or the process ID. <br> 
+            Each process in the system has a unique pid. <br>
+            Pids eventually repeat because all the possible numbers are used up and the next pid rolls or starts over. <br>
+            At any point of time, no two processes with the same pid exist in the system because it is the pid that Unix uses to track each process. <br>
+       </div>
+       <br>
+       <br>
+       <ul>
+           <li><a href="/pages/process_management_doc/cpu_scheduling.html">CPU SCHEDULING</a></li>
+           <li><a href="/pages/process_management_doc/process_sync.html">PROCESS SYNCHRONIZATION</a></li>
+           <li><a href="/pages/process_management_doc/ipc.html">IPC</a></li>
+       </ul>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>

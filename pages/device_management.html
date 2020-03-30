@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">Device Management</div>
+       <br><br>
+       <div id="body_templete">
+        Modern Linux distributions are capable of identifying a hardware component which is plugged into an 
+        already-running system. There are a lot of user-friendly distributions like Ubuntu, which will automatically 
+        run specific applications like Rhythmbox when a portable device like an iPod is plugged into the system. <br><br>
+        Hotplugging (which is the word used to describe the process of inserting devices into a running system) is 
+        achieved in a Linux distribution by a combination of three components:¬†Udev, HAL, and Dbus. <br><br>
+        Udev supplies a dynamic device directory containing only the nodes for devices which are connected to the system. 
+        It creates or removes the device node files in the /dev directory as they are plugged in or taken out. 
+        Dbus is like a system bus which is used for inter-process communication. 
+        The HAL gets information from the Udev service, when a device is attached to the system and it creates an 
+        XML representation of that device. It then notifies the corresponding desktop application like Nautilus 
+        through the Dbus and Nautilus will open the mounted device‚Äôs files. <br><br>
+        <ul style="text-align: left;">
+            <li><a href="/pages/device_management_doc/disk_scheduling.html">DISK SCHEDULING</a></li>
+            <li><a href="/pages/device_management_doc/intrrupt_vector.html">INTRRUPT VECTOR</a></li>
+        </ul>
+       </div>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>

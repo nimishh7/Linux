@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">Memory Management</div>
+       <br><br>
+       <div id="body_templete">
+        Linux memory management subsystem is responsible, as the name implies, 
+        for managing the memory in the system. 
+        This includes implemnetation of virtual memory and demand paging, 
+        memory allocation both for kernel internal structures and user space programms, 
+        mapping of files into processes address space and many other things. <br><br>
+        Linux memory management is a complex system with many configurable settings. 
+        Most of these settings are available via /proc filesystem and can be quired and adjusted using sysctl.
+        These APIs are described in Documentation/admin-guide/sysctl/vm.rst and in man 5 proc. <br><br><br>
+        The memory management in Linux is a complex system that evolved over the years and included 
+        more and more functionality to support a variety of systems from MMU-less microcontrollers to supercomputers. 
+        he memory management for systems without an MMU is called nommu and it definitely deserves a dedicated document,
+        which hopefully will be eventually written. 
+        Yet, although some of the concepts are the same, here we assume that an MMU is available and a CPU 
+        can translate a virtual address to a physical address.
+       </div>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>

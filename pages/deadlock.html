@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Linux</title>
+        <link rel="stylesheet" href="/style/style.css">
+    </head>
+    <body>
+       <div id="heading">Deadlocks</div>
+       <br><br>
+       <div id="body_templete">
+        Deadlock is a situation where a set of processes are blocked because each process is holding a 
+        resource and waiting for another resource acquired by some other process.
+        Consider an example when two trains are coming toward each other on same track and there is only one track,
+        none of the trains can move once they are in front of each other. 
+        Similar situation occurs in operating systems when there are two or more processes hold some resources 
+        and wait for resources held by other(s).
+        For example, in the below diagram, 
+        Process 1 is holding Resource 1 and waiting for resource 2 which is acquired by process 2, 
+        and process 2 is waiting for resource 1. <br><br><br>
+        <img src="/images/deadlock.png" height="500px" width="800px">
+       </div>
+       <br>
+       <br>
+       <a href="/index.html"><img src="/images/back-button.png" height="50px" width="50px"></a>
+    </body>
+</html>
